@@ -19,3 +19,4 @@ function getPrimes(n) {
 	}
 	return result;
 }
+module.exports = getPrimes;
