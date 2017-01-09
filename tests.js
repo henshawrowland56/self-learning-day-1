@@ -39,6 +39,10 @@ describe("Test for Proper functionality", function() {
     var testPrimes = getPrimes(500);
     assert(testPrime[0] == testPrimes[0]);
   });
+  it("should return 25 as the number of elements for prime numbers for input of 100", function() {
+    var testPrime = getPrimes(100);
+    assert(testPrime.length == 25);
+  });
 });
 
 
