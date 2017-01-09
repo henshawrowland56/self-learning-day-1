@@ -30,6 +30,10 @@ describe("Test for Proper functionality", function() {
     assert(getPrimes(75) == [ 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73
  ]);
   });
+  it("should return 7 as the last element for prime numbers for input of 7", function() {
+    var testPrime = getPrimes(7);
+    assert(testPrime[testPrime.length-1] == 7);
+  });
 });
 
 
