@@ -34,6 +34,11 @@ describe("Test for Proper functionality", function() {
     var testPrime = getPrimes(7);
     assert(testPrime[testPrime.length-1] == 7);
   });
+  it("should return 2 as the first element for prime numbers for any input", function() {
+    var testPrime = getPrimes(7);
+    var testPrimes = getPrimes(500);
+    assert(testPrime[0] == testPrimes[0]);
+  });
 });
 
 
