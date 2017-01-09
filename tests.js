@@ -43,6 +43,10 @@ describe("Test for Proper functionality", function() {
     var testPrime = getPrimes(100);
     assert(testPrime.length == 25);
   });
+  it("should return 499 as the last elements for prime numbers for input of 500", function() {
+    var testPrime = getPrimes(500);
+    assert(testPrime[testPrime.length-1] == 499);
+  });
 });
 
 
